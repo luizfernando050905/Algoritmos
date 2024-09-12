@@ -1,0 +1,79 @@
+#include <stdio.h>
+
+int main(){
+	float salario, bonus, resultado;
+	char avaliacao;
+	
+	printf("Digite o salario: ");
+	scanf("%f", &salario);
+	
+	printf("Digite a avalicao: ");
+	scanf("%s", &avaliacao);
+	
+	switch(avaliacao){
+		case 'a':
+			bonus = 0.15;
+			break;
+		case 'b':
+			bonus = 0.10;
+			break;
+		case 'c':
+			bonus = 0.05;
+			break;
+			
+	   		
+	}
+	
+	resultado = salario + (salario * bonus);
+	
+	printf("O salario com bonus e: %f", resultado);
+	
+	
+	
+	
+	
+	
+}
+
+#include <stdio.h>
+
+int main(){
+	float produto, desconto, quantidade, resultado;
+	
+	 printf("Digite o valor produto: ");
+	 scanf("%f", &produto);
+	 
+	 printf("Digite o desconto: ");
+	 scanf("%f", &desconto);
+	 
+	 printf("Digite a quantidade: ");
+	 scanf("%f", &quantidade);
+	 
+	 resultado = (produto * quantidade) / desconto;
+	 
+	 printf("O resultado e: %f ", resultado );
+	 return 0;
+	 
+	 
+}
+
+#include <stdio.h>
+int main(){
+	float valor, desconto, resultado;
+	
+	
+	printf("Digite o valor: ");
+	scanf("%f",&valor);
+	
+	if(valor > 100 && valor <500){
+		desconto = 0.10;
+	} else if(valor >= 500){
+		desconto = 0.20;
+	}
+	
+	resultado = valor - (valor * desconto);
+	
+	printf("O valor com desconto e: %f",resultado);
+	return 0;
+	 
+}
